@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int calc(int N);
+
+int main() 
+{
+    int N, sum;
+    printf("Enter a positive number: ");
+    scanf("%d", &N);
+    sum = calc(N);
+    printf("The sum is: %d", sum);
+}
+
+int calc(int N) {
+    return (N * (N + 1)) / 2;  
+}
